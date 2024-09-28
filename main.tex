@@ -1,0 +1,188 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\LARGE Anurag Mishra} & Email: \href{mailto:anurag.mishra899n@gmail.com}{anurag.mishra899n@gmail.com} \\
+  \href{https://medium.com/@anuragmishra_27746}{Medium: \@anuragmishra\_27746} & Mobile: +91-9456243057 \\
+  \href{https://github.com/anurag-mishra899}{Github: github.com/anurag-mishra899} & \href{https://www.linkedin.com/in/anurag-mishra-660961b7/}{LinkedIn: Anurag Mishra} \\
+\end{tabular*}
+
+
+%--------Profile Summary---------------
+\vspace{5pt}
+
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Experience}{\textbf{6.5+ YoE} in designing and developing \textbf{Machine Learning, Deep Learning, Generative AI, and NLP} solutions for various industries, including retail, banking, telecommunications, and chemicals}
+	\resumeSubItem{Frameworks}{PyTorch, Langchain, LlamaIndex, Fastapi, Scikit, NLTK, SpaCy, TensorFlow, Keras}
+	\resumeSubItem{Tools}{Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite}
+	\resumeSubItem{Platforms}{Azure Cloud, AWS, GCP, Linux}
+    \resumeSubItem{Certified in}{\textbf{Azure Fundamental, Azure Data Scientist, Databricks ML Professional}}
+    \resumeSubItem{Publications}{\href{https://x.com/LangChainAI/status/1758895834077466825?t=bkoZkX7IcRj-6DsQ9DjfBw&s=19}{Article 1}, \href{https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d}{Article 2}, \href{https://medium.com/@anuragmishra_27746/optimizing-rags-overcoming-architecture-hurdles-for-peak-performance-part-1-8b5493b6a114}{Article 3}, \href{https://www.youtube.com/watch?v=lBOeELjndJo}{GenAI Conference}}
+	\resumeSubHeadingListEnd
+
+\vspace{5pt}
+
+%--------Experience---------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{EY GDS}{Hybrid}{Associate Manager (Full-time)}{Feb 2022 - Present}
+    \resumeItemListStart
+        \resumeItem{Deployed GenAI Chat-bot Solution in Production}{
+            \begin{itemize}
+                \item Led \textbf{a team of 6 engineers} in designing and developing \textbf{Chat-bot solution for 2-3k users across 40 Branches} for Largest bank in Philippines.
+                \item Built solution reduces time-spent manually from \textbf{5-10 min/query to $<$30 seconds.}
+            \end{itemize}
+            }
+        \resumeItem{Developed LLM Production Pipeline}{
+            \begin{itemize}  
+                \item Implemented \textbf{custom prepossessing pipeline and chunking strategy} to handle \textbf{complex tables, pdf formatting \& flow-charts etc.}
+                \item Build scalable deployment pipeline for using Fastapi, Langchain \& \href{https://github.com/Azure-Samples/AI-Gateway}{Azure API Gateway}, Kubernetes to \textbf{support throttling, fallbacks, load balancing to handle rate-limit, exceeded quota issues}.
+            \end{itemize}     
+            }
+        \resumeItem{LLMOps \& Evaluation Pipeline}{
+            \begin{itemize}
+                \item Implemented custom RAG evaluation framework for \textbf{automated assessment for E2E RAG and individual components (routing, retrieval, generation etc)} to improve performance and optimize the solution. 
+                \item Developed \textbf{monitoring pipeline using Langfuse} to observability and logging. Build Feedback Capturing mechanism to continuous enhancement of solution.
+            \end{itemize}
+        }
+        \resumeItem{Smart Call Centre Solution for US Based Automotive Client}{
+            \begin{itemize}
+                \item Developed LLM \& data ingestion pipeline integrating Azure DevOps, Azure App Services, OpenAI models, Langchain \& integration with ServiceNow to manage Post-Call Actions, including call summarization, Ticket Creation \& Updates, categorization and Quality Assurance.
+                \item Designed pipeline to handle 300-400 calls/centre which increase agent's productivity by 60\% in hourly-time spent.
+            \end{itemize} }
+        \resumeItem{Fine-tuning of Transformer-Based Models (BERT, RoBerta etc)}{
+            \begin{itemize}
+                \item Perform fine-tuning of transformer based models using Pytorch, hugging-face for downstream tasks i.e. NER \& Text Classification to build document extraction solution.
+                \item Deployed deep learning models as batch endpoints utilizing Azure Web Apps, Databricks Jobs, and MLflow for streamlined integration and efficient model management.
+            \end{itemize}}
+        \resumeItem{Go-to-Market Strategy on Generative AI}{Involved in “Go to Market” strategy on Generative AI for various client and developed prototype on different industry use-cases using LLM models i.e. OpenAI, LlaMa, MPT, Dolly etc and took client awareness session on \href{https://shorturl.at/jsPSZ}{“Industry Implementation and Risks of GenAI”}}
+      \resumeItemListEnd
+\vspace{5pt}
+
+    \resumeSubheading{Deloitte (Office of US)}{Remote}{Consultant - AI (Full-time)}{Feb 2021 - Feb 2022}
+    \resumeItemListStart
+        \resumeItem{Fixture Optimization for Inventory Management}{Devised optimization solution to allocate optimum number of fixtures for each product and brands for one of biggest global retail chain stores. The solution has provided \$5 million reduction in cost and expense.}
+        \resumeItem{Custom Clustering Approach with Constraints}{Implemented clustering and optimization algorithms to assign the optimum fixtures, while keeping up the various geographically and logistically business constraints.}
+        \resumeItem{Sales Forecasting for Retail Client}{Performed Sales Forecasting model for each department per store to assess the demand. Utilized various Tree based algorithms e.g.- Gradient Boosting, XGBoost \& LightGBM and regression-based model e.g.- ARIMA, \& SARIMA for the prediction.}
+        \resumeItem{Tools \& Technologies}{Used Python programming and worked with libraries such as Pandas, Scikit-learn, NumPy, Matplotlib, and Seaborn.}
+      \resumeItemListEnd
+\vspace{-3pt}
+    \resumeSubheading{Virtusa Polaris}{Hybrid}{Machine Learning Engineer}{June 2018 - Feb 2021}
+	\resumeItemListStart
+        \resumeItem{Multi-Class classification of Trading Products}{Devised solution for Product Controllers to reduce person-hours spent on tasks of identifying breach in trading activity. Used multi-class classification and ETL operations to perform pre- and post-breach analysis.}
+        \resumeItem{NLP Models to Assess Commentary using Spacy}{Developed NLP solution to identify the inconsistency in PnL commentary generated by Product Controllers. Milestones included building RestAPI to render user request and ETL operations to handle user requests.}
+        \resumeItem{Impact}{Built solutions has increased the numbers of tagging 15k /hour to 1 million /hour}
+        \resumeItem{ML Models/Approaches}{Implemented various ML algorithms like Random Forest, Logistic regression, Support Vector Machine, Gradient Boosting and parameter tuning the model for the optimum solution }
+        \resumeItem{Tools \& Technologies}{Used Python programming and worked on libraries like Pandas, Scikit-learn, NumPy, Matplotlib, Seaborn, Spacy}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Fine-Tuned LLM for Domain Specific tasks using LoRA}{Performed Fine-tuning of LLM models(llama 3.1 8B, mistral 7B) on 80 GB A-100 GPU on custom build dataset for Manufacturing domain.}
+\vspace{2pt}
+\resumeSubItem{LLM Based Agentic flow for Text to Code Solution}{Agent based solution that convert requirements to code. The solution uses multi-agents (debugger, coder, tester etc) to write the bug-free and optimized code.}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Manipur}{India}
+      {Bachelor of Technology - Information Technology; GPA: 8.5}{July 2014 - June 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Honors and Awards}
+\resumeSubHeadingListStart
+  \item {Awarded Excellence Client Performance Award in EY}
+  \item {Honoured to be among in top 10 students in CSE Department}
+  \item {Achieved (Among Top 1 \% in board) in Entire district in HSC exam.}
+\resumeSubHeadingListEnd
+
+%-----------VOLUNTEER EXPERIENCE-----------------
+%\section{Volunteer Experience}
+%  \resumeSubHeadingListStart
+%	\resumeSubheading
+%    {Community Lead at Developer Student Clubs NSEC}{Kolkata, India}{Conducted technical \& soft-skills training impacting over 3000 students.}{Jan 2019 - Present}
+%	\resumeSubheading
+%    {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}{Organized events, workshops, reaching over 7000 people.}{Nov 2017 - Present}
+%\resumeSubHeadingListEnd
+
+\end{document}
