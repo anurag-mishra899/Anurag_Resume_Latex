@@ -85,10 +85,10 @@
 \section{Profile Summary}    
     \resumeSubHeadingListStart
 	\resumeSubItem{Experience}{\textbf{7+ YoE} in designing and developing production-grade \textbf{Machine Learning, Deep Learning, Generative AI, and NLP} solutions for various industries, including retail, banking, telecommunications, and chemicals}
-	\resumeSubItem{Frameworks}{PyTorch, Langchain,Crewai, Autogen, LlamaIndex, Fastapi, Scikit, NLTK, SpaCy, TensorFlow, Keras}
+	\resumeSubItem{Frameworks}{PyTorch, LangGraph, Langchain,Crewai, Autogen, LlamaIndex, Fastapi, Scikit, NLTK, SpaCy, TensorFlow, Keras}
 	\resumeSubItem{Tools}{Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite}
 	\resumeSubItem{Platforms}{Azure Cloud (OpenAI), AWS (Claude Sonnet), GCP, Linux}
-    \resumeSubItem{Certified in}{\textbf{Azure Fundamental, Azure Data Scientist, Databricks ML Professional}}
+    \resumeSubItem{Certified in}{\textbf{Azure Data Scientist, Databricks ML Professional, AWS Developer Associate}}
     \resumeSubItem{AI Conference as Speaker}{\href{https://www.youtube.com/watch?v=lBOeELjndJo}{LLM Application },\href{https://www.youtube.com/live/qJNc-XAsZ6w?si=t4M72iMpFE6UD4wF&t=20517}{,Agentic Workflow }\href{https://www.youtube.com/watch?v=JrTTUtlhtSM&t=4s}{,Multi Modal LLMs}}
     \resumeSubItem{Blogs/Publications}{\href{https://x.com/LangChainAI/status/1758895834077466825?t=bkoZkX7IcRj-6DsQ9DjfBw&s=19}{Article 1}, \href{https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d}{Article 2}, \href{https://medium.com/@anuragmishra_27746/optimizing-rags-overcoming-architecture-hurdles-for-peak-performance-part-1-8b5493b6a114}{Article 3},\href{https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a}{Article 4}}
 	\resumeSubHeadingListEnd
@@ -98,32 +98,34 @@
 %--------Experience---------------
 \section{Experience}
   \resumeSubHeadingListStart 
-    \resumeSubheading{EY GDS}{Hybrid}{Associate Manager (Full-time)}{Feb 2022 - Present}
+    \resumeSubheading{EY GDS}{Hybrid}{Manager (Full-time)}{Feb 2022 - Present}
     \resumeItemListStart
     
     \resumeItem{GenAI Chatbot for 1500+ Bank Branches, Serving 9,000–10,000 Daily Users}{  
         \begin{itemize}
-            \item Led a team of 7 to design and deploy a GenAI chatbot for querying bank policies, circulars, and bulletins from SharePoint, reducing resolution time from \textbf{5–10 minutes to <30 seconds}.
-            \item Developed a custom ingestion and chunking pipeline to process \textbf{6,000–7,000 complex PDFs} with tables and flowcharts, boosting retrieval performance by \textbf{55\%}.
-            \item Built a scalable backend using FastAPI, LangChain, Azure API Gateway, and Kubernetes with \textbf{region-based load balancing, throttling, and fallback}, cutting downtime by \textbf{50\%}.
+            \item Led a team of 5 to design and deploy a GenAI chatbot for querying bank policies, circulars, and bulletins from SharePoint, reducing resolution time from \textbf{5–10 minutes to $<30$ seconds}.
+            \item Developed document ingestion using Logic app, re-ranking \& chunking layer to process \textbf{6,000–7,000 complex PDFs} with tables and flowcharts, boosting retrieval performance by \textbf{55\%}.
+            \item Built a scalable backend using FastAPI, LangChain, Azure API Gateway, and APIM with \textbf{region-based load balancing, throttling, and fallback}, cutting downtime by \textbf{50\%}.
         \end{itemize}
     }
     
     \resumeItem{Automated Post-Call Action Using Fine-Tuned SLMs for Contact Centers}{
         \begin{itemize}
-            \item Fine-tuned SLMs using \textbf{LoRA techniques} on curated instruction datasets to generate structured post-call summaries aligned with business SOPs.
-            \item Designed an end-to-end pipeline with \textbf{LangChain, Azure DevOps, ServiceNow APIs, and optimized inference}(\textbf{paged attention, KV caching etc}) on A100 GPUs for intelligent ticket handling.
-            \item Enabled processing of \textbf{300–400 daily calls per center}, improving agent productivity by \textbf{60\%} and reducing wrap-up time by \textbf{40\%}, driving \textbf{\$2M annual cost savings}.
+            \item Fine-tuned \textbf{Small Language Models (SLMs)} using \textbf{LoRA techniques} on curated instruction datasets to generate structured post-call summaries aligned with business SOPs.  
+            \item Designed an end-to-end automation pipeline integrating \textbf{LangChain, Azure DevOps, and ServiceNow APIs} with optimized inference techniques (\textbf{paged attention, KV caching, and quantized inference}) for intelligent ticket generation and routing.  
+            \item Conducted \textbf{LLM inference benchmarking and system-level optimization} to reduce GPU utilization by \textbf{35\%}, cutting inference cost per call by \textbf{20\%}.  
+            \item Enabled processing of \textbf{300–400 daily calls per center}, improving agent productivity by \textbf{60\%} and reducing wrap-up time by \textbf{40\%}, driving an estimated \textbf{\$2M annual operational savings}.
         \end{itemize}
     }
     
     \resumeItem{Multi-Agent LLM System for Customer Support Triage and Query Resolution}{
-        \begin{itemize}
-            \item Designed specialized agents including \textbf{Intent Router, Information Synthesizer, Policy Validator, Escalation Negotiator}, each prompted for domain-specific functions and operating on shared memory via vector DBs
-            \item Integrated with enterprise knowledge bases (SharePoint, Confluence) and CRM tools via \textbf{Azure Functions and Logic Apps}, enabling contextual awareness and real-time task hand-offs.
-            \item Designed a comprehensive evaluation framework combining \textbf{task-level benchmarks, agent handoff accuracy, and dialogue coherence metrics (BLEU, ROUGE, GPT-4 evals)} to iteratively refine agent behaviors and ensure reliability
-        \end{itemize}
+    \begin{itemize}
+        \item Designed specialized agents including \textbf{Intent Router, Information Synthesizer, Policy Validator, Escalation Negotiator}, each prompted for domain-specific functions and operating on shared memory, reducing manual intervention by \textbf{60\%} and improving triage accuracy by \textbf{40\%}.
+        \item Productionized LangGraph Agents with \textbf{enterprise knowledge bases (SharePoint, Confluence) and CRM tools}, using \textbf{MCP Layer} enabling contextual awareness and real-time task hand-offs.
+        \item Deployed agent monitoring and evaluation framework using \textbf{self-hosted Langfuse \& custom eval metrics}, combining \textbf{task-level benchmarks, agent handoff accuracy, and dialogue coherence metrics} to iteratively refine agents.
+    \end{itemize}
     }
+
     
     \resumeItemListEnd
 
@@ -151,14 +153,14 @@
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Fine-Tuned LLM for Domain Specific tasks using LoRA, Increasing Domain-based NER By 55\%}{Performed Fine-tuning of LLM models(LLaMA 3.1 8B, Mistral 7B) on 80 GB A-100 GPU on custom build dataset for Manufacturing domain.}
-\vspace{2pt}
-\resumeSubItem{LLM Based Agentic flow for Text to Code Solution}{Agent based solution that convert requirements to code. The solution uses multi-agents (debugger, coder, tester etc) to write the bug-free and optimized code.}
-\vspace{2pt}
-\resumeSubHeadingListEnd
+% \vspace{-5pt}
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Fine-Tuned LLM for Domain Specific tasks using LoRA, Increasing Domain-based NER By 55\%}{Performed Fine-tuning of LLM models(LLaMA 3.1 8B, Mistral 7B) on 80 GB A-100 GPU on custom build dataset for Manufacturing domain.}
+% \vspace{2pt}
+% \resumeSubItem{LLM Based Agentic flow for Text to Code Solution}{Agent based solution that convert requirements to code. The solution uses multi-agents (debugger, coder, tester etc) to write the bug-free and optimized code.}
+% \vspace{2pt}
+% \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
