@@ -82,15 +82,15 @@
 %--------Profile Summary---------------
 \vspace{5pt}
 
-\section{Profile Summary}    
+\section{Profile Summary}
     \resumeSubHeadingListStart
-	\resumeSubItem{Experience}{\textbf{7+ YoE} in designing and developing production-grade \textbf{Machine Learning, Deep Learning, Generative AI, and NLP} solutions for various industries, including retail, banking, telecommunications, and chemicals}
-	\resumeSubItem{Frameworks}{PyTorch, LangGraph, Langchain,Crewai, Autogen, LlamaIndex, Fastapi, Scikit, NLTK, SpaCy, TensorFlow, Keras}
-	\resumeSubItem{Tools}{Kubernetes, Docker, GIT, PostgreSQL, MySQL, SQLite}
-	\resumeSubItem{Platforms}{Azure Cloud (OpenAI), AWS (Claude Sonnet), GCP, Linux}
-    \resumeSubItem{Certified in}{\textbf{Azure Data Scientist, Databricks ML Professional, AWS Developer Associate}}
-    \resumeSubItem{AI Conference as Speaker}{\href{https://www.youtube.com/watch?v=lBOeELjndJo}{LLM Application },\href{https://www.youtube.com/live/qJNc-XAsZ6w?si=t4M72iMpFE6UD4wF&t=20517}{,Agentic Workflow }\href{https://www.youtube.com/watch?v=JrTTUtlhtSM&t=4s}{,Multi Modal LLMs}}
-    \resumeSubItem{Blogs/Publications}{\href{https://x.com/LangChainAI/status/1758895834077466825?t=bkoZkX7IcRj-6DsQ9DjfBw&s=19}{Article 1}, \href{https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d}{Article 2}, \href{https://medium.com/@anuragmishra_27746/optimizing-rags-overcoming-architecture-hurdles-for-peak-performance-part-1-8b5493b6a114}{Article 3},\href{https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a}{Article 4}}
+	\resumeSubItem{Experience}{\textbf{7+ years} architecting and deploying production-scale \textbf{Machine Learning, Deep Learning, Generative AI, and NLP} systems across retail, banking, telecommunications, and enterprise domains}
+	\resumeSubItem{Frameworks}{PyTorch, LangGraph, LangChain, CrewAI, AutoGen, LlamaIndex, FastAPI, Scikit-learn, NLTK, SpaCy, TensorFlow, Keras}
+	\resumeSubItem{Infrastructure}{Kubernetes, Docker, Git, PostgreSQL, MySQL, Redis, CI/CD Pipelines}
+	\resumeSubItem{Cloud Platforms}{Azure (OpenAI, ML Studio), AWS (Bedrock, SageMaker), GCP (Vertex AI), Linux}
+    \resumeSubItem{Certifications}{\textbf{Azure Data Scientist, Databricks ML Professional, AWS Developer Associate}}
+    \resumeSubItem{Technical Talks}{\href{https://www.youtube.com/watch?v=lBOeELjndJo}{LLM Applications}, \href{https://www.youtube.com/live/qJNc-XAsZ6w?si=t4M72iMpFE6UD4wF&t=20517}{Agentic Workflows}, \href{https://www.youtube.com/watch?v=JrTTUtlhtSM&t=4s}{Multi-Modal LLMs}}
+    \resumeSubItem{Publications}{\href{https://x.com/LangChainAI/status/1758895834077466825?t=bkoZkX7IcRj-6DsQ9DjfBw&s=19}{Featured by LangChain}, \href{https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d}{RAG Chunking Strategies}, \href{https://medium.com/@anuragmishra_27746/optimizing-rags-overcoming-architecture-hurdles-for-peak-performance-part-1-8b5493b6a114}{RAG Optimization}, \href{https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a}{RAG Pipeline Architecture}}
 	\resumeSubHeadingListEnd
 
 \vspace{3pt}
@@ -98,31 +98,32 @@
 %--------Experience---------------
 \section{Experience}
   \resumeSubHeadingListStart 
-    \resumeSubheading{EY GDS}{Hybrid}{Manager (Full-time)}{Feb 2022 - Present}
+    \resumeSubheading{EY GDS}{Hybrid}{Manager - AI/ML Engineering}{Feb 2022 - Present}
     \resumeItemListStart
-    
-    \resumeItem{GenAI Chatbot for 1500+ Bank Branches, Serving 9,000–10,000 Daily Users}{  
+
+    \resumeItem{Enterprise RAG System for 1500+ Bank Branches | 10K DAU}{
         \begin{itemize}
-            \item Led a team of 5 to design and deploy a GenAI chatbot for querying bank policies, circulars, and bulletins from SharePoint, reducing resolution time from \textbf{5–10 minutes to $<30$ seconds}.
-            \item Developed document ingestion using Logic app, re-ranking \& chunking layer to process \textbf{6,000–7,000 complex PDFs} with tables and flowcharts, boosting retrieval performance by \textbf{55\%}.
-            \item Built a scalable backend using FastAPI, LangChain, Azure API Gateway, and APIM with \textbf{region-based load balancing, throttling, and fallback}, cutting downtime by \textbf{50\%}.
+            \item Architected and deployed a distributed GenAI chatbot serving \textbf{9,000–10,000 DAU} for querying bank policies, circulars, and bulletins from SharePoint, reducing query resolution time from \textbf{5–10 min to $<$30s}.
+            \item Engineered document ingestion pipeline using Azure Logic Apps with hybrid search (BM25 + semantic), cross-encoder re-ranking, and recursive chunking to process \textbf{6,000–7,000 complex PDFs} with tables and flowcharts, achieving \textbf{55\% retrieval accuracy improvement}.
+            \item Designed fault-tolerant backend architecture using FastAPI, LangChain, Azure API Gateway with \textbf{region-based load balancing, rate limiting, and graceful degradation}, reducing service downtime by \textbf{50\%}.
         \end{itemize}
     }
-    
-    \resumeItem{Automated Post-Call Action Using Fine-Tuned SLMs for Contact Centers}{
+
+    \resumeItem{SLM Fine-Tuning for Automated Post-Call Actions | Contact Center Automation}{
         \begin{itemize}
-            \item Fine-tuned \textbf{Small Language Models (SLMs)} using \textbf{LoRA techniques} on curated instruction datasets to generate structured post-call summaries aligned with business SOPs.  
-            \item Designed an end-to-end automation pipeline integrating \textbf{LangChain, Azure DevOps, and ServiceNow APIs} with optimized inference techniques (\textbf{paged attention, KV caching, and quantized inference}) for intelligent ticket generation and routing.  
-            \item Conducted \textbf{LLM inference benchmarking and system-level optimization} to reduce GPU utilization by \textbf{35\%}, cutting inference cost per call by \textbf{20\%}.  
-            \item Enabled processing of \textbf{300–400 daily calls per center}, improving agent productivity by \textbf{60\%} and reducing wrap-up time by \textbf{40\%}, driving an estimated \textbf{\$2M annual operational savings}.
+            \item Fine-tuned \textbf{Small Language Models (Mistral 7B, Phi-3 etc)} using \textbf{LoRA/QLoRA} and PEFT on curated instruction datasets to generate structured post-call summaries aligned with enterprise SOPs.
+            \item Deployed production inference on \textbf{vLLM} leveraging \textbf{PagedAttention, continuous batching, and prefix caching} for KV cache optimization, integrated with \textbf{ServiceNow APIs} for automated ticket generation and routing.
+            \item Optimized throughput using \textbf{tensor parallelism and FP8 quantization}, reducing GPU memory footprint by \textbf{35\%} and inference cost per call by \textbf{20\%}.
+            \item Scaled system to process \textbf{300–400 daily calls per center}, improving agent productivity by \textbf{60\%} and reducing wrap-up time by \textbf{40\%}, delivering \textbf{\$2M annual operational savings}.
         \end{itemize}
     }
-    
-    \resumeItem{Multi-Agent LLM System for Customer Support Triage and Query Resolution}{
+
+    \resumeItem{Multi-Agent LLM Orchestration for Customer Support Triage}{
     \begin{itemize}
-        \item Designed specialized agents including \textbf{Intent Router, Information Synthesizer, Policy Validator, Escalation Negotiator}, each prompted for domain-specific functions and operating on shared memory, reducing manual intervention by \textbf{60\%} and improving triage accuracy by \textbf{40\%}.
-        \item Productionized LangGraph Agents with \textbf{enterprise knowledge bases (SharePoint, Confluence) and CRM tools}, using \textbf{MCP Layer} enabling contextual awareness and real-time task hand-offs.
-        \item Deployed agent monitoring and evaluation framework using \textbf{self-hosted Langfuse \& custom eval metrics}, combining \textbf{task-level benchmarks, agent handoff accuracy, and dialogue coherence metrics} to iteratively refine agents.
+        \item Architected stateful multi-agent system using \textbf{LangGraph} with \textbf{short-term memory (Redis checkpointer)} and \textbf{long-term memory (PostgresStore + pgvector)} for cross-session context retention and semantic retrieval.
+        \item Designed specialized agents (\textbf{Intent Router, Information Synthesizer, Policy Validator, Escalation Negotiator}) with conditional routing and shared memory namespaces, reducing manual intervention by \textbf{60\%} and improving triage accuracy by \textbf{40\%}.
+        \item Integrated enterprise knowledge bases (SharePoint, Confluence) via \textbf{MCP with OAuth 2.1 authentication, RBAC-based scope controls, and token audience verification} for secure real-time tool orchestration.
+        \item Implemented evaluation framework using \textbf{Langfuse} tracking \textbf{Task Completion Rate, Tool Correctness, Agent Handoff Accuracy, and Semantic Coherence} for continuous agent refinement.
     \end{itemize}
     }
 
@@ -131,24 +132,23 @@
 
 \vspace{-3pt}
 
-    \resumeSubheading{Deloitte (Office of US)}{Remote}{Consultant - AI (Full-time)}{Feb 2021 - Feb 2022}
+    \resumeSubheading{Deloitte (Office of US)}{Remote}{Consultant - AI/ML}{Feb 2021 - Feb 2022}
     \resumeItemListStart
-        \resumeItem{Fine-tuning Transformer Models Reducing Operational Costs by 70\%}{  
-        \begin{itemize}  
-            \item Delivered advanced techniques in deep learning model tuning, leading to significant improvements in \textbf{automation extraction workflows} across the organization; measured performance gains resulted in reduced processing times of critical data inputs by over 80\% hours monthly.
-            \item Deployed deep learning models as \textbf{batch endpoints utilizing Azure Web Apps, Databricks Jobs, and MLflow}, ensuring streamlined integration and efficient model management, reducing operational costs by 70\%.  
-        \end{itemize}  
-        }  
-        \resumeItem{Fixture Optimization for Inventory Management, Achieved \$5 Million Cost Reduction}{Devised optimization solution to allocate the optimal number of fixtures for each product and brand in retail chain stores, resulting in a \$5 million reduction in costs and expenses.}
-        \resumeItem{Sales Forecasting for Retail Client, Enhanced Demand Forecasting by 45\%}{Developed sales forecasting model for each department per store to assess demand. Utilized tree-based algorithms such as Gradient Boosting, XGBoost, and LightGBM, as well as regression-based models like ARIMA \& SARIMA.}
+        \resumeItem{Transformer Fine-Tuning for Document Automation | 70\% Cost Reduction}{
+        \begin{itemize}
+            \item Engineered transformer-based extraction pipelines using \textbf{LayoutLM and BERT variants} for automated document processing, reducing manual data entry time by \textbf{80\% (200+ hours/month)}.
+            \item Deployed models as \textbf{batch inference endpoints on Azure Databricks with MLflow model registry}, implementing CI/CD pipelines for model versioning and A/B testing, reducing operational costs by \textbf{70\%}.
+        \end{itemize}
+        }
+        \resumeItem{Fixture Optimization for Retail Inventory | \$5M Cost Savings}{Developed mixed-integer linear programming (MILP) optimization solution to allocate optimal fixture counts per product and brand across retail chain stores, achieving \textbf{\$5M annual cost reduction}.}
+        \resumeItem{Demand Forecasting System | 45\% Accuracy Improvement}{Built hierarchical time-series forecasting pipeline using \textbf{XGBoost, LightGBM, and SARIMA ensembles} with feature engineering for seasonality and promotions, improving demand forecast accuracy by \textbf{45\%}.}
       \resumeItemListEnd
 \vspace{-3pt}
-    \resumeSubheading{Virtusa Polaris}{Hybrid}{Machine Learning Engineer (Full-time)}{June 2018 - Feb 2021}
+    \resumeSubheading{Virtusa Polaris}{Hybrid}{Machine Learning Engineer}{June 2018 - Feb 2021}
 	\resumeItemListStart
-        \resumeItem{Multi-Class classification of Trading Products, Reducing Manual Tagging from 15k/hour to 1 Million/hour}{Devised solution for Product Controllers to reduce person-hours spent on tasks of identifying breach in trading activity.}
-        \resumeItem{NLP Models to Assess Commentary using SpaCy, Improving Comments Quality by 80\% }{Developed NLP solution to identify the inconsistency in PnL commentary generated by Product Controllers. Milestones included building Rest API to render user request and ETL operations to handle user requests.}
-        \resumeItem{ML Models \& Techniques}{Utilized various ML algorithms like Random Forest, Logistic regression Gradient Boosting and Hyper-parameter tuning to get 95\% accuracy.}
-        \resumeItem{Tools \& Technologies}{Used Python programming and worked on libraries like Pandas, Scikit-learn, NumPy, Matplotlib, Seaborn, Spacy}
+        \resumeItem{Trading Product Classification | 66x Throughput Improvement}{Developed multi-class classification system using \textbf{Gradient Boosting and ensemble methods} for automated trade activity tagging, scaling throughput from \textbf{15K to 1M classifications/hour} with \textbf{95\% accuracy}.}
+        \resumeItem{NLP-based PnL Commentary Validation | 80\% Quality Improvement}{Built NLP pipeline using \textbf{SpaCy NER and rule-based matching} to detect inconsistencies in Product Controller commentaries, deployed as \textbf{RESTful API with async ETL processing}.}
+        \resumeItem{Tech Stack}{Python, Scikit-learn, XGBoost, SpaCy, Pandas, NumPy, Flask, PostgreSQL}
 	\resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -167,16 +167,16 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Institute of Technology, Manipur}{India}
-      {Bachelor of Technology - Information Technology; GPA: 8.5}{July 2014 - June 2018}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+      {Bachelor of Technology - Information Technology; GPA: 8.5/10}{July 2014 - June 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Coursework:} Data Structures \& Algorithms, Machine Learning, Artificial Intelligence, Database Systems, Operating Systems, Computer Networks}}}
   \resumeSubHeadingListEnd
 
 %-----------AWARDS-----------------
 \section{Honors and Awards}
 \resumeSubHeadingListStart
-  \item {Awarded Excellence Client Performance Award in EY}
-  \item {Honored to be among top 10 students in CSE Department}
-  \item {Achieved (Among Top 1 \% in board) in the entire district in HSC exam.}
+  \item {Excellence in Client Delivery Award, EY GDS (2023)}
+  \item {Top 10 in Computer Science Department, NIT Manipur}
+  \item {District Topper (Top 1\%) in Higher Secondary Examination}
 \resumeSubHeadingListEnd
 
 %-----------VOLUNTEER EXPERIENCE-----------------
